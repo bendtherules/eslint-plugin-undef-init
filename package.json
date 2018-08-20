@@ -8,12 +8,20 @@
     "eslint-plugin",
     "undef-init"
   ],
+  
   "author": "Abhas Bhattacharya <abhasbhattacharya2@gmail.com>",
   "homepage": "https://github.com/bendtherules/eslint-plugin-undef-init",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bendtherules/eslint-plugin-undef-init.git"
+  },
+
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha tests --recursive"
   },
+  
+  
   "dependencies": {
     "requireindex": "~1.1.0"
   },
@@ -21,6 +29,7 @@
     "eslint": "~3.9.1",
     "mocha": "^3.1.2"
   },
+  
   "engines": {
     "node": ">=0.10.0"
   },
