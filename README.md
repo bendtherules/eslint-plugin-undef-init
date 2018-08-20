@@ -20,6 +20,22 @@ $ npm install eslint-plugin-undef-init --save-dev
 
 ## Usage
 
+Either extend from the plugin or add the rules explicitly.
+
+### A. Extend from plugin
+```js
+{
+    "extends": [
+        // ... other extends here (like airbnb)
+        "plugin:undef-init/recommended"
+    ]
+}
+```
+
+## OR
+
+### B. Use rule directly
+
 Add `undef-init` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
@@ -29,22 +45,6 @@ Add `undef-init` to the plugins section of your `.eslintrc` configuration file. 
     ]
 }
 ```
-
-Then, either extend from the plugin or add the rules explicitly.
-
-### A. Extend from plugin
-```js
-{
-    "extends": [
-        // ... other extends here (like airbnb)
-        "undef-init"
-    ]
-}
-```
-
-## OR
-
-### B. Use rule directly
 
 Then configure the rules you want to use under the rules section.
 
