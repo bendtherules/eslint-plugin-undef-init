@@ -1,6 +1,6 @@
 # eslint-plugin-undef-init
 
-Always initialize variables declarations. Instead of naked declarations, set it to undefined.
+Always initialize variables during declaration. Set it explicitly to undefined, if required.
 
 ## Installation
 
@@ -30,22 +30,37 @@ Add `undef-init` to the plugins section of your `.eslintrc` configuration file. 
 }
 ```
 
+Then, either extend from the plugin or add the rules explicitly.
+
+### A. Extend from plugin
+```js
+{
+    "extends": [
+        // ... other extends here (like airbnb)
+        "undef-init"
+    ]
+}
+```
+
+## OR
+
+### B. Use rule directly
 
 Then configure the rules you want to use under the rules section.
 
-```json
+```js
 {
     "rules": {
-        "undef-init/rule-name": 2
+        "no-undef-init": 0, // Disable conflicting rule
+        "undef-init/undef-init": 1,
     }
 }
 ```
 
 ## Supported Rules
 
-* Fill in provided rules here
+There is only one rule, for now -
 
+* `undef-init` - Disallow variable declaration without initialization.
 
-
-
-
+There is a built-in conflicting rule `no-undef-init` in eslint, so you'll need to disable it if you are using this rule
