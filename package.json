@@ -1,13 +1,15 @@
 {
   "name": "eslint-plugin-undef-init",
-  "version": "0.0.0",
-  "description": "Always initialize variables declarations. Instead of naked declarations, set it to undefined.",
+  "version": "0.0.1",
+  "description": "Always initialize variables during declaration. Set it explicitly to undefined, if required.",
   "keywords": [
     "eslint",
     "eslintplugin",
-    "eslint-plugin"
+    "eslint-plugin",
+    "undef-init"
   ],
-  "author": "Abhas Bhattacharya",
+  "author": "Abhas Bhattacharya <abhasbhattacharya2@gmail.com>",
+  "homepage": "https://github.com/bendtherules/eslint-plugin-undef-init",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha tests --recursive"
