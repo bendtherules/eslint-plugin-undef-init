@@ -1,11 +1,12 @@
 # Always initialize variables during declaration. Set it explicitly to undefined, if required. (undef-init)
 
+## Rule Details
+
 ### It is better to explicitly initialize all variable declarations.
 Instead of naked var / let declarations (which are implicitly set to `undefined` anyway), always explicitly set them to `undefined`. It makes clear that you explicitly intended to set them to undefined, not just because you forgot to initialize.
 
-## Rule Details
-
-This rule aims to...
+Note: Initialization is not allowed in the `ForDeclaration` part of  for-of and for-in statements. Hence, those need not (and can not) be set to undefined.
+Ex: `for (var i in []){do_something()}` is correct.
 
 Examples of **incorrect** code for this rule:
 
@@ -38,7 +39,7 @@ for (var i in []){do_something()}
 
 ### Options
 
-There are no options
+There are no options.
 
 ## When Not To Use It
 
