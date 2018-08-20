@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-undef-init",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Always initialize variables during declaration. Set it explicitly to undefined, if required.",
   "keywords": [
     "eslint",
