@@ -1,1 +1,2 @@
-1. Release in npm
+1. Setup CI - Travis, Appveyor
+2. Add npm and CI badge
