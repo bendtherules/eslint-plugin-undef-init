@@ -1,5 +1,11 @@
 # eslint-plugin-undef-init
 
+[![NpmVersion](https://img.shields.io/npm/v/eslint-plugin-undef-init.svg)](https://www.npmjs.com/package/eslint-plugin-undef-init)
+Travis: [![Travis (.org) branch](https://img.shields.io/travis/bendtherules/eslint-plugin-undef-init/master.svg)](https://travis-ci.org/bendtherules/eslint-plugin-undef-init)
+Appveyor: [![AppVeyor branch](https://img.shields.io/appveyor/ci/bendtherules/eslint-plugin-undef-init/master.svg)](https://ci.appveyor.com/project/bendtherules/eslint-plugin-undef-init)
+
+
+
 Always initialize variables during declaration. Set it explicitly to undefined, if required.
 
 ## Installation
